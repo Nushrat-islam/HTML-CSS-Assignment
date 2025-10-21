@@ -17,35 +17,34 @@
     }
 
     header {
-  position: relative;
-  background: linear-gradient(90deg, #111, #2c2c2c, #111);
-  color: #fff;
-  text-align: center;
-  padding: 2.5rem 1rem 3rem;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
+      position: relative;
+      background: linear-gradient(90deg, #111, #2c2c2c, #111);
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem 3rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
 
-header .back-btn {
-  position: absolute;
-  left: 10px;       
-  top: 15%;         
-  transform: translateY(-50%);
-  background: linear-gradient(90deg, black, black);
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  box-shadow: 0 3px 10px rgba(0,123,255,0.3);
-  transition: all 0.3s ease;
-}
+    header .back-btn {
+      position: absolute;
+      left: 10px;
+      top: 15%;
+      transform: translateY(-50%);
+      background: linear-gradient(90deg, black, black);
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      box-shadow: 0 3px 10px rgba(0,123,255,0.3);
+      transition: all 0.3s ease;
+    }
 
-header .back-btn:hover {
-  transform: translateY(-50%) translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,123,255,0.5);
-}
-
+    header .back-btn:hover {
+      transform: translateY(-50%) translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,123,255,0.5);
+    }
 
     header h1 {
       font-size: 2.2rem;
@@ -184,6 +183,21 @@ header .back-btn:hover {
       font-family: 'Courier New', monospace;
     }
 
+    .lighthouse-img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      border: 2px solid #333;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .lighthouse-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+      cursor: pointer;
+    }
+
     footer {
       text-align: center;
       color: #888;
@@ -204,6 +218,7 @@ header .back-btn:hover {
     <a href="index.html" class="back-btn">← Go Back to Home</a>
     <h1>HTML + CSS Assignment</h1>
   </header>
+
   <main>
     <section>
       <h2>Website Screenshots</h2>
@@ -268,6 +283,36 @@ body {
         </code></pre>
       </a>
     </section>
+
+    <section class="font-sample">
+  <h2>Lighthouse Performance (Desktop)</h2>
+  <p>This section displays the results of a Lighthouse audit for the desktop version of the website, highlighting performance, accessibility, and SEO scores.</p>
+
+  <a href="img/lighthouse-desktop.png" target="_blank" class="code-link">
+    <figure style="margin: 0; text-align: center;">
+      <img src="img/lighthouse-desktop.png" alt="Lighthouse desktop performance report screenshot" class="lighthouse-img">
+      <figcaption style="margin-top: 0.8rem; font-weight: 500; color: #444;">
+        Lighthouse Desktop Report (Performance, Accessibility, SEO)
+      </figcaption>
+    </figure>
+  </a>
+</section>
+
+<section class="font-sample">
+  <h2>Lighthouse Performance (Mobile)</h2>
+  <p>This section displays the results of a Lighthouse audit for the mobile version of the website, highlighting performance, accessibility, and SEO scores on smaller screens.</p>
+
+  <a href="img/lighthouse-mobile.png" target="_blank" class="code-link">
+    <figure style="margin: 0; text-align: center;">
+      <img src="img/lighthouse-mobile.png" alt="Lighthouse mobile performance report screenshot" class="lighthouse-img">
+      <figcaption style="margin-top: 0.8rem; font-weight: 500; color: #444;">
+        Lighthouse Mobile Report (Performance, Accessibility, SEO)
+      </figcaption>
+    </figure>
+  </a>
+</section>
+
+
   </main>
 
   <footer>
